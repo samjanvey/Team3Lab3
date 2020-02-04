@@ -11,7 +11,11 @@ import java.net.URL;
 
 /**
  *
- * @author sjanvey
+ * Add your name here once you've cloned the repository
+ * 
+ * Sam Janvey
+ * 
+ * 
  */
 public class Team3Week3 {
 
