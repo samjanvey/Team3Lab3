@@ -24,10 +24,10 @@ public class Team3Week3 {
         // Change this value to any API endpoint
         URL url = new URL("https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets");
         String apiToken = "WNfaIizSBbltHBSITycOiRCEsVhlcEvS"; // API Request Token
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         
         try {
             // Open connection to API Endpoint
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setDoOutput(true);
             connection.setRequestMethod("GET"); // Change to any HTTP method
             connection.setRequestProperty("Token", apiToken); // Add the API Token to the Request Header
@@ -59,9 +59,12 @@ public class Team3Week3 {
                 System.out.println("Something went wrong");
             }
                 
-            connection.disconnect();
+            
         } catch(Exception e) {
             e.printStackTrace();
+        } finally {
+            connection.disconnect();
+            System.out.println("Connection Closed");
         }
     }
     
