@@ -1,6 +1,7 @@
 
 package team3week3;
 
+import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -38,10 +39,15 @@ public class Team3Week3 {
                 try {
                     BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
-                    String lineIn = in.readLine();
-                    StringBuilder response = new StringBuilder();
-                    while (lineIn != null) {
-                        response.append(lineIn);
+                    String response = in.readLine();
+                    //StringBuilder response = new StringBuilder();
+                    // Gson gson = new Gson();
+                    while (in.readLine() != null) {
+                        if(response == null) {
+                            System.err.println("Bad API response");
+                        } else {
+                            System.out.println(String.format(response));
+                        }
                     }
                     in.close();
                 
