@@ -59,7 +59,7 @@ public class Team3Week3 {
                 System.out.println("Something went wrong");
             }
                 
-                 
+            connection.disconnect();
         } catch(Exception e) {
             e.printStackTrace();
         }
