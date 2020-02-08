@@ -46,7 +46,7 @@ public class Team3Week3 {
                         if (response == null) {
                             System.err.println("Bad API response");
                         } else {
-                            System.out.println(String.format(response));
+                            System.out.println(response.toString());
                         }
                     }
                     in.close();
