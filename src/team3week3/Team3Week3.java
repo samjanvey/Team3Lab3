@@ -14,8 +14,8 @@ import java.net.URL;
  *
  * Sam Janvey
  * Kristina Mantha
+ *Greg Ramos
  * 
- * Greg Ramos
  */
 public class Team3Week3 {
 
