@@ -22,6 +22,7 @@ public class Team3Week3 {
     public static void main(String[] args) throws IOException {
         // NOAA Dataset API Endpoint
         // Change this value to any API endpoint
+        //Alternative endpoint to avoid API Token need https://geodesy.noaa.gov/api/geoid/ght?lat=40.0&lon=W0800000.0
         URL url = new URL("https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets");
         String apiToken = "WNfaIizSBbltHBSITycOiRCEsVhlcEvS"; // API Request Token
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
