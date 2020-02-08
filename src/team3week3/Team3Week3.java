@@ -14,7 +14,7 @@ import java.net.URL;
  * Add your name here once you've cloned the repository
  * 
  * Sam Janvey
- * asd
+ * 
  * 
  */
 public class Team3Week3 {
@@ -40,8 +40,6 @@ public class Team3Week3 {
                     BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
                     String response = in.readLine();
-                    //StringBuilder response = new StringBuilder();
-                    // Gson gson = new Gson();
                     while (in.readLine() != null) {
                         if(response == null) {
                             System.err.println("Bad API response");
@@ -51,7 +49,7 @@ public class Team3Week3 {
                     }
                     in.close();
                 
-                    System.out.println(response.toString());
+                    System.out.println(response);
                 } catch(Exception e) {
                     e.printStackTrace();
                 }
