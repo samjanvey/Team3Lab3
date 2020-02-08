@@ -31,6 +31,8 @@ public class Team3Week3 {
             connection.setDoOutput(true);
             connection.setRequestMethod("GET"); // Change to any HTTP method
             connection.setRequestProperty("Token", apiToken); // Add the API Token to the Request Header
+            
+            //Response declaration initialize
             int responseCode = connection.getResponseCode();
             System.out.println("Response: " + responseCode); // 200 == OK
 
@@ -54,11 +56,13 @@ public class Team3Week3 {
                     e.printStackTrace();
                 }
             } else {
-                System.out.println("Something went wrong");
+                 System.out.println("Bad Response Code: " + responseCode);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
+            
+            //closes connection
         } finally {
             connection.disconnect();
             System.out.println("Connection Closed");
