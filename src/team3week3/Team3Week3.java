@@ -14,6 +14,7 @@ import java.net.URL;
  *
  * Sam Janvey
  * Kristina Mantha
+ * Chris Lefebvre
  *
  */
 public class Team3Week3 {
